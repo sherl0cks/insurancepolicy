@@ -1,0 +1,9 @@
+package org.acme.insurance.pricing;
+
+import java.lang.Number;
+
+rule "TooOld"
+	dialect "mvel"
+	when
+	then
+end
