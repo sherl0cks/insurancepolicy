@@ -7,39 +7,7 @@
 	<packaging>kjar</packaging>
 	<name>policyquote</name>
 	<description>PolicyQuote Project</description>
-	<repositories>
-		<repository>
-			<id>jboss-maven-repository</id>
-			<name>JBoss Maven Repository</name>
-			<url>http://maven.repository.redhat.com/techpreview/all/</url>
-			<layout>default</layout>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-				<updatePolicy>never</updatePolicy>
-			</snapshots>
-		</repository>
-	</repositories>
-	
-	<pluginRepositories>
-		<pluginRepository>
-			<id>jboss-maven-repository</id>
-			<name>JBoss Maven Repository</name>
-			<url>http://maven.repository.redhat.com/techpreview/all/</url>
-			<layout>default</layout>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-				<updatePolicy>never</updatePolicy>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
+	<!--  
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -52,6 +20,7 @@
 			<version>6.0.2-redhat-6</version>
 		</dependency>
 	</dependencies>
+	-->
 
 	<build>
 		<plugins>
