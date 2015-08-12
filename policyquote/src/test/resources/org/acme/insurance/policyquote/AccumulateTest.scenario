@@ -8,7 +8,7 @@
       <fieldData>
         <field-data>
           <name>numberOfAccidents</name>
-          <value></value>
+          <value>1</value>
           <nature>1</nature>
         </field-data>
         <field-data>
@@ -18,7 +18,7 @@
         </field-data>
         <field-data>
           <name>numberOfTickets</name>
-          <value></value>
+          <value>1</value>
           <nature>1</nature>
         </field-data>
         <field-data>
