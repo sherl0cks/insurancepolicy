@@ -1,41 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.acme.insurance</groupId>
-  <artifactId>policyquote</artifactId>
-  <version>1.0</version>
-  <packaging>kjar</packaging>
-  <name>policyquote</name>
-  <description>PolicyQuote Project</description>
-  <repositories>
-    <repository>
-      <id>guvnor-m2-repo</id>
-      <name>Guvnor M2 Repo</name>
-      <url>http://bpmsapplication-deirdredomain.apps.ose.opentlc.com/business-central/maven2/</url>
-    </repository>
-  </repositories>
-  <dependencies>
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.11</version>
-    </dependency>
-    <dependency>
-        <groupId>org.drools</groupId>
-        <artifactId>drools-compiler</artifactId>
-        <version>6.0.2-redhat-6</version>
-    </dependency>
-  </dependencies>
-  
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.kie</groupId>
-        <artifactId>kie-maven-plugin</artifactId>
-        <version>6.0.2-redhat-6</version>
-        <extensions>true</extensions>
-      </plugin>
-    </plugins>
-  </build>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.acme.insurance</groupId>
+	<artifactId>policyquote</artifactId>
+	<version>1.0</version>
+	<packaging>kjar</packaging>
+	<name>policyquote</name>
+	<description>PolicyQuote Project</description>
+	<repositories>
+		<repository>
+			<id>guvnor-m2-repo</id>
+			<name>Guvnor M2 Repo</name>
+			<url>http://bpmsapplication-deirdredomain.apps.ose.opentlc.com/business-central/maven2/</url>
+		</repository>
+
+		<repository>
+			<id>jboss-maven-repository</id>
+			<name>JBoss Maven Repository</name>
+			<url>http://maven.repository.redhat.com/techpreview/all/</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>fusesource</id>
+			<url>http://repo.fusesource.com/nexus/content/groups/public/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+		<repository>
+			<id>fusesource.snapshot</id>
+			<url>http://repo.fusesource.com/nexus/content/groups/public-snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+		<repository>
+			<id>apache-public</id>
+			<url>https://repository.apache.org/content/groups/public/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+
+	</repositories>
+	
+	<pluginRepositories>
+		<pluginRepository>
+			<id>jboss-maven-repository</id>
+			<name>JBoss Maven Repository</name>
+			<url>http://maven.repository.redhat.com/techpreview/all/</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.drools</groupId>
+			<artifactId>drools-compiler</artifactId>
+			<version>6.0.2-redhat-6</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.kie</groupId>
+				<artifactId>kie-maven-plugin</artifactId>
+				<version>6.0.2-redhat-6</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
