@@ -1,0 +1,9 @@
+package org.acme.insurance.pricing;
+
+import java.lang.Number;
+
+rule "RetractRejection"
+	dialect "mvel"
+	when
+	then
+end
