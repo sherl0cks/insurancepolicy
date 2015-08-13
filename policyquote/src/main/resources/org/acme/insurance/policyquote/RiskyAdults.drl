@@ -8,7 +8,7 @@ rule "RiskyAdults"
     when
         //conditions
         driver : Driver(age > 24, numberOfAccidents >= 1 || numberOfTickets >=2)
-        policy : Policy(price == 0, policyType == "AUTO")
+        policy : Policy(price == null, policyType == "AUTO")
     then
         //actions
         modify(policy) {setPrice(300)};
