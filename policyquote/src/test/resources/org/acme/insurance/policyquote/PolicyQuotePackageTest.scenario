@@ -50,7 +50,7 @@
         </field-data>
         <field-data>
           <name>price</name>
-          <value></value>
+          <value>1</value>
           <nature>1</nature>
         </field-data>
         <field-data>
@@ -82,7 +82,7 @@
         </field-data>
         <field-data>
           <name>price</name>
-          <value></value>
+          <value>10</value>
           <nature>1</nature>
         </field-data>
         <field-data>
@@ -114,7 +114,7 @@
         </field-data>
         <field-data>
           <name>price</name>
-          <value></value>
+          <value>1</value>
           <nature>1</nature>
         </field-data>
         <field-data>
