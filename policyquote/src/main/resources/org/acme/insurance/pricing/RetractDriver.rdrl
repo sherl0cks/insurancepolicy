@@ -8,7 +8,8 @@ rule "RetractDriver"
 	dialect "mvel"
 	ruleflow-group "retract"
 	when
-		driver:Driver()
+		Driver( )
+		driver: Driver()
 	then
 		System.out.println("Retracting Driver " + driver.getDriverName() + " - " + driver.getAge()); retract(driver);
 end
