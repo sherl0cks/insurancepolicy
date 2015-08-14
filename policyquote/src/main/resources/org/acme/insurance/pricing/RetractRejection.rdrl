@@ -7,8 +7,7 @@ rule "RetractRejection"
 	dialect "mvel"
 	ruleflow-group "retract"
 	when
-		Rejection( )
-		rejection: Rejection()
+		rejection : Rejection( )
 	then
 		System.out.println("Retracting rejection: " + rejection); retract(rejection);
 end
