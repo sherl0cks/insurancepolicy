@@ -7,8 +7,7 @@ rule "RetractPolicy"
 	dialect "mvel"
 	ruleflow-group "retract"
 	when
-		Policy( )
-		policy: Policy()
+		policy : Policy( )
 	then
 		System.out.println("Retracting policy: " + policy.getPrice()); retract(policy);
 end
